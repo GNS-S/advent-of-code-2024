@@ -1,1 +1,9 @@
-# advent-of-code-2024
+# Advent of Code 2024 solutions
+Written and formatted in a way that makes sense to me
+
+### Running the code
+Puzzle texts and inputs can be found at [https://adventofcode.com/2024](https://adventofcode.com/2024)
+
+Every `{number of day}` folder expects an additional file inside titled `input.txt` with the input
+
+To run: navigate to a day folder, create and fill `input.txt` and run the appropriate part file via python e.g. `python3 part{1 or 2}.py`
