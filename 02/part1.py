@@ -11,7 +11,7 @@ def main():
 
         print(s)
 
-def parse_input(file) -> tuple[list, list]:
+def parse_input(file) -> list[list[int]]:
     lines = file.read().strip().split('\n')
 
     reports = []
