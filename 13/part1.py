@@ -16,7 +16,7 @@ def main():
 
         print(s)
 
-def parse_input(file) -> tuple[list[list[str]], tuple[int, int]]:
+def parse_input(file) -> list[tuple, tuple, tuple]:
     machine_strs = file.read().strip().split('\n\n')
 
     parse_button = lambda str: tuple([int(coord.split('+')[1]) for coord in str.split(': ')[1].split(', ')])

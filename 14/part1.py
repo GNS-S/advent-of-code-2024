@@ -21,7 +21,7 @@ def main():
 
         print(quadrants['NW'] * quadrants['NE'] * quadrants['SW'] * quadrants['SE'])
 
-def parse_input(file) -> tuple[list[list[str]], tuple[int, int]]:
+def parse_input(file) -> list[tuple[tuple[int, int], tuple[int, int]]]:
     lines = file.read().strip().split('\n')
 
     robots = []
