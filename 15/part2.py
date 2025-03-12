@@ -14,7 +14,7 @@ def main():
         grid = []
         for row in initial_grid:
             grid.append([])
-            for tile in row:grid[-1] += expansion[tile]
+            for tile in row: grid[-1] += expansion[tile]
 
         r, c = find_start_coordinates(grid)
 

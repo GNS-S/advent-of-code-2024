@@ -22,9 +22,6 @@ def main():
                     if start_dists[((r, c), d)] + end_dists[((r, c), opposite)] == total:
                         in_optimal.add((r, c))
 
-        for (r, c) in list(in_optimal):
-            grid[r][c] = 'O'
-
         print(len(in_optimal))
 
 if __name__ == '__main__':
