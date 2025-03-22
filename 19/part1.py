@@ -11,6 +11,11 @@ def main():
 
         print(s)
 
+def parse_input(file) -> tuple[list, list]:
+    blocks, patterns = file.read().strip().split('\n\n')
+
+    return blocks.split(', '), patterns.split('\n')
+
 def combinations(blocks: list[str], pattern: str, cache: dict):
     if pattern in cache: return cache[pattern]
 
@@ -24,11 +29,6 @@ def combinations(blocks: list[str], pattern: str, cache: dict):
     cache[pattern] = total
 
     return total
-
-def parse_input(file) -> tuple[list, list]:
-    blocks, patterns = file.read().strip().split('\n\n')
-
-    return blocks.split(', '), patterns.split('\n')
 
 if __name__ == '__main__':
     main()
