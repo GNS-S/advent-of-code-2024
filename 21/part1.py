@@ -7,7 +7,7 @@ def main():
         codes, numpad, dirpad = parse_input(f)
         print(solve(codes, numpad, dirpad, dirpad_chain=2))
 
-def parse_input(file) -> tuple[tuple, tuple, int, list[list], tuple]:
+def parse_input(file) -> tuple[list, dict, dict]:
     lines = file.read().strip().splitlines()
 
     return lines, pad_to_dict(['789', '456', '123', 'X0A']), pad_to_dict(['X^A', '<v>'])

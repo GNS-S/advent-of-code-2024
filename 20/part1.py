@@ -5,7 +5,7 @@ def main():
         start, total_distance, grid = parse_input(f)
         print(get_cheat_path_count(start, total_distance, grid, cheat_length=2))
 
-def parse_input(file) -> tuple[tuple, tuple, int, list[list], tuple]:
+def parse_input(file) -> tuple[tuple, int, list]:
     lines = file.read().strip().split('\n')
 
     distance = 1
