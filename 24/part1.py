@@ -37,7 +37,3 @@ def parse_input(file) -> dict[str, set]:
 
 if __name__ == '__main__':
     main()
-
-        # Based on https://www.reddit.com/r/adventofcode/comments/1hl698z/comment/m3kt1je
-        # Which is just checking whether gates conform to the rules of a ripple-carry adder
-        # (https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder)
